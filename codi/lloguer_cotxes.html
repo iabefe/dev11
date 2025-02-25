@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva d'Automòbil</title>
+</head>
+<body>
+    <h2>Formulari de Reserva</h2>
+    <form action="processa_reserva.php" method="post">
+        <label>Nom i Cognoms: <input type="text" name="nom" required></label><br>
+        <label>Número VISA: <input type="text" name="visa" required></label><br>
+        <label>Tipus d'automòbil:
+            <select name="tipus">
+                <option value="benzina">Benzina</option>
+                <option value="electric">Elèctric</option>
+            </select>
+        </label><br>
+        <label>Quantitat de seients:
+            <select name="seients">
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </label><br>
+        <label>Quantitat de dies: <input type="number" name="dies" min="1" required></label><br>
+        <label>Quantitat de quilòmetres:
+            <select name="km">
+                <option value="menys">Menys de 300</option>
+                <option value="mes">Més de 300</option>
+            </select>
+        </label><br>
+        <button type="submit">Calcular Reserva</button>
+    </form>
+</body>
+</html>
